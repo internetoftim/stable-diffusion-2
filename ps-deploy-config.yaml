@@ -1,0 +1,26 @@
+enabled: true
+image: gcapidev/stable-diffusion-2-512-deployment
+containerRegistry: sd2-txt2img-arsalanu
+port: 8100
+env:
+  - name: SERVER_MODELS
+    value: '[{"model":"stable_diffusion_2_txt2img_512", "replicas":"2"}]'
+  - name: POPTORCH_CACHE_DIR
+    value: /src/model_cache
+  - name: HUGGINGFACE_HUB_CACHE
+    value: /src/model_cache
+  - name: HF_HOME
+    value: /src/model_cache
+resources:
+  replicas: 1
+  instanceType: IPU-POD16
+  autoscaling:
+    enabled: true
+    maxReplicas: 2
+    metrics:
+      - metric: requestDuration
+        summary: average
+        value: 2
+healthChecks:
+  readiness:
+    path: /readiness
