@@ -25,7 +25,7 @@ or simply run it in a notebook cell:
 
 <img src="notebook-clone.png" alt= “” width="400" height="150">
 
-From there, open the notebook `notebook\local-test-and-deploy.ipynb`
+From there, open the notebook `stable-diffusion-2\notebook\local-test-and-deploy.ipynb`
 
 
 # Config
