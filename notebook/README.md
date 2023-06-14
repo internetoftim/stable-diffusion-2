@@ -6,8 +6,27 @@ Step-by-step process to launch an API endpoint from within a notebook environmen
 
 As an example, this server is running a stable diffusion inference API under `/stable_diffusion_2_txt2img_512`
 
-Disclaimers:
--   This repository shows an example of how you might deploy a server. We encourage you to build on this example to create a service that meets the security and resiliancy requirements of your application.
+
+
+### Quickstart: Launch a Stable Diffusion API from Gradient
+
+[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/graphcore/Gradient-HuggingFace?machine=Free-IPU-POD4&container=graphcore/pytorch-jupyter%3A3.2.1-ubuntu-20.04-20230531&file=stable-diffusion%2Ftext_to_image.ipynb)
+
+
+Click Run on Gradient to load a notebook environment. The repo from this runtime doesn't contain our API code. You will need to clone this repo by running the following on a terminal:
+
+```console
+git clone https://github.com/internetoftim/stable-diffusion-2.git
+```
+
+or simply run it in a notebook cell:
+
+<!-- ![alt text](notebook-clone.png "Clone") -->
+
+<img src="notebook-clone.png" alt= “” width="400" height="150">
+
+From there, open the notebook `notebook\local-test-and-deploy.ipynb`
+
 
 
 ## Model configuration
@@ -160,27 +179,10 @@ docker push <dockerhub-username>/<dockerhub-deployment-name>:<optional-dockerhub
 ```
 
 
-### Try deploying Stable Diffusion API from Gradient
-
-| Content | Run on Paperspace |
-|---------|-------------------|
-
-|SD-ODSC1|[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/graphcore/Gradient-HuggingFace?machine=Free-IPU-POD4&container=graphcore/pytorch-jupyter%3A3.2.1-ubuntu-20.04-20230531&file=stable-diffusion%2Ftext_to_image.ipynb)|
-
-|SD-ODSC2|[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/internetoftim/stable-diffusion-2?machine=Free-IPU-POD4&container=graphcore/pytorch-jupyter%3A3.2.1-ubuntu-20.04-20230531&file=notebook%2Flocal-test-and-deploy.ipynb)|
-
-From the notebook environment, you can clone this repo by running the following on a terminal:
-
-```console
-git clone https://github.com/internetoftim/stable-diffusion-2.git
-```
-
-or simply run it in a notebook cell
-<!-- ![alt text](notebook-clone.png "Clone") -->
-
-<img src="notebook-clone.png" alt= “” width="400" height="150">
-
 
 
 <!-- https://console.paperspace.com/github/graphcore/Gradient-HuggingFace?machine=Free-IPU-POD4&container=graphcore/pytorch-jupyter%3A3.2.1-ubuntu-20.04-20230531&file=stable-diffusion%2Ftext_to_image.ipynb -->
 
+
+Disclaimers:
+-   This repository shows an example of how you might deploy a server. We encourage you to build on this example to create a service that meets the security and resiliancy requirements of your application.
