@@ -29,6 +29,7 @@ From there, open the notebook `notebook\local-test-and-deploy.ipynb`
 
 
 
+
 ## Model configuration
 Syntax of SERVER_MODELS environmental variable:
 ```
@@ -179,6 +180,7 @@ docker push <dockerhub-username>/<dockerhub-deployment-name>:<optional-dockerhub
 ```
 
 
+[![Join our Slack Community](https://img.shields.io/badge/Slack-Join%20Graphcore's%20Community-blue?style=flat-square&logo=slack)](https://www.graphcore.ai/join-community)
 
 
 <!-- https://console.paperspace.com/github/graphcore/Gradient-HuggingFace?machine=Free-IPU-POD4&container=graphcore/pytorch-jupyter%3A3.2.1-ubuntu-20.04-20230531&file=stable-diffusion%2Ftext_to_image.ipynb -->
