@@ -28,6 +28,9 @@ or simply run it in a notebook cell:
 From there, open the notebook `notebook\local-test-and-deploy.ipynb`
 
 
+# Config
+
+The deployment workflow is relying on an example environment as outlined from the [API Deployment template](https://github.com/graphcore/api-deployment), check out the template to get a deep dive.
 
 
 ## Model configuration
